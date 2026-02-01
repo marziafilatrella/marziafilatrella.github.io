@@ -75,7 +75,6 @@
             text-align: center;
             color: white;
         }
-        
 
         .hero-content h1 {
             font-size: 3.5rem;
@@ -286,46 +285,48 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Lightbox */
         .lightbox-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 2000;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
 
-.lightbox-overlay.active {
-    display: flex;
-}
+        .lightbox-overlay.active {
+            display: flex;
+        }
 
-.lightbox-img {
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
-    border-radius: 8px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
-}
+        .lightbox-img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
 
-.lightbox-close {
-    position: absolute;
-    top: 25px;
-    right: 35px;
-    color: white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    font-weight: 300;
-    transition: opacity 0.3s;
-}
+        .lightbox-close {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            font-weight: 300;
+            transition: opacity 0.3s;
+        }
 
-.lightbox-close:hover {
-    opacity: 0.6;
-}
+        .lightbox-close:hover {
+            opacity: 0.6;
+        }
     </style>
 </head>
 <body>
@@ -360,14 +361,13 @@
                 <p><strong></strong> Architetto con 20 anni di esperienza nella progettazione di spazi residenziali. Ogni mio progetto tende a valorizzare e rispettare il sito originale, esaltandone le peculiarità e i punti di forza. Il mio approccio parte dal conoscere i committenti ed analizzare gli spazi per proporre uno stile sempre unico.
 Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi e studio cromatico, seguendo ogni fase con artigiani e imprese di fiducia.</p>
                 
-                <p>Ogni progetto rappresenta un'opportunità unica di creare ambienti che riflettano la personalità e le esigenze dei miei clienti. </p>
+                <p>Ogni progetto rappresenta un'opportunità unica di creare ambienti che riflettono la personalità e le esigenze dei miei clienti. </p>
 
                 <p><strong>Specializzazioni:</strong></p>
                 <ul style="margin-left: 1.5rem; margin-top: 1rem;">
                     <li>Ristrutturazione edilizia</li>
                     <li>Design di interni</li>
                     <li>Restyling e progettazione arredi su misura</li>
-                   
                 </ul>
             </div>
         </div>
@@ -377,7 +377,8 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
     <section id="portfolio" class="section">
         <h2>I Miei Progetti</h2>
         <div class="portfolio-grid">
-                      <div class="project-card">
+
+            <div class="project-card">
                 <div class="project-image" style="background-image: url('immagini/SC-pianta.png');"></div>
                 <div class="project-info">
                     <h3>Progetto di ristrutturazione</h3>
@@ -388,7 +389,7 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
             
             <div class="project-card">
                 <div class="project-image" style="background-image: url('immagini/cucina-pt-bag.jpg');"></div>
-            <div class="project-info">
+                <div class="project-info">
                     <h3>Bilocale a Milano</h3>
                     <p>La zona giorno con cucina open space</p>
                     <span class="project-category">Ristrutturazioni</span>
@@ -413,7 +414,6 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 </div>
             </div>
 
-          
             <div class="project-card">
                 <div class="project-image" style="background-image: url('immagini/ML.png');"></div>
                 <div class="project-info">
@@ -441,7 +441,6 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 </div>
             </div>
 
-           
             <div class="project-card">
                 <div class="project-image" style="background-image: url('immagini/living.png');"></div>
                 <div class="project-info">
@@ -460,7 +459,7 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 </div>
             </div>
             
-                 <div class="project-card">
+            <div class="project-card">
                 <div class="project-image" style="background-image: url('immagini/mdc.png');"></div>
                 <div class="project-info">
                     <h3>Appartamento di vacanza</h3>
@@ -500,7 +499,7 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 <div class="project-image" style="background-image: url('immagini/NORV.png');"></div>
                 <div class="project-info">
                     <h3>Progetto arredamento</h3>
-                    <p>Studio degli arredi e accessori per un appaartamento</p>
+                    <p>Studio degli arredi e accessori per un appartamento</p>
                     <span class="project-category">Interior Design</span>
                 </div>
             </div>
@@ -512,10 +511,10 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                     <p>Nuovi spazi in una casa d'epoca</p>
                     <span class="project-category">Ristrutturazione</span>
                 </div>
-           </div>
-        </div>
-    </section>
-             
+            </div>
+
+        </div><!-- chiude portfolio-grid -->
+    </section><!-- chiude sezione portfolio -->
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
@@ -537,25 +536,34 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 <div style="margin-top: 1rem;">
                     <a href="https://www.linkedin.com/in/marzia-filatrella-630644183/" style="color: #3498db; margin-right: 1rem;">LinkedIn</a>
                     <a href="https://www.instagram.com/marzia.filatrella/" style="color: #3498db; margin-right: 1rem;">Instagram</a>
-                                 </div>
-            </div>
+                </div>
+            </div><!-- chiude contact-info -->
             
- <div class="contact-form">
-    <h3>Scrivimi</h3>
-    <p style="margin-bottom: 1.5rem; color: #666;">Per contattarmi puoi scrivermi direttamente via email:</p>
-    
-    <a href="mailto:marzia.filatrella@gmail.com?subject=Richiesta informazioni progetto&body=Salve, sono interessato/a ai suoi servizi di architettura.%0A%0ANome:%0AProgetto:%0AMessaggio:%0A%0AGrazie" 
-       style="display: inline-block; background: #3498db; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: background 0.3s ease;">
-       📧 Scrivimi una Email
-    </a>
-    
-    <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">Si aprirà il tuo programma email con un messaggio pre-compilato</p>
-</div>
+            <div class="contact-form">
+                <h3>Scrivimi</h3>
+                <p style="margin-bottom: 1.5rem; color: #666;">Per contattarmi puoi scrivermi direttamente via email:</p>
+                
+                <a href="mailto:marzia.filatrella@gmail.com?subject=Richiesta informazioni progetto&body=Salve, sono interessato/a ai suoi servizi di architettura.%0A%0ANome:%0AProgetto:%0AMessaggio:%0A%0AGrazie" 
+                   style="display: inline-block; background: #3498db; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: background 0.3s ease;">
+                   📧 Scrivimi una Email
+                </a>
+                
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: #888;">Si aprirà il tuo programma email con un messaggio pre-compilato</p>
+            </div><!-- chiude contact-form -->
+
+        </div><!-- chiude contact-content -->
+    </section><!-- chiude sezione contact -->
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 Marzia Filatrella - Architetto. Tutti i diritti riservati.</p>
     </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Immagine progetto">
+    </div>
 
     <script>
         // Smooth scrolling per i link di navigazione
@@ -577,7 +585,9 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
         });
-                const lightbox = document.getElementById('lightbox');
+
+        // Lightbox per le immagini del portfolio
+        const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
         document.querySelectorAll('.project-card').forEach(card => {
@@ -589,21 +599,19 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
             });
         });
 
+        // Chiude il lightbox cliccando sull'overlay o sulla croce
         lightbox.addEventListener('click', function (e) {
             if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
                 lightbox.classList.remove('active');
             }
         });
 
+        // Chiude anche con il tasto Escape
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
                 lightbox.classList.remove('active');
             }
         });
     </script>
-            <div class="lightbox-overlay" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img class="lightbox-img" id="lightbox-img" src="" alt="Immagine progetto">
-    </div>
 </body>
 </html>
