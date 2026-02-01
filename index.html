@@ -576,6 +576,29 @@ Mi occupo di riprogettazione della disposizione degli ambienti, selezione arredi
                 header.style.background = 'rgba(255, 255, 255, 0.95)';
             }
         });
+                const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('click', function () {
+                const bgImage = this.querySelector('.project-image').style.backgroundImage;
+                const url = bgImage.replace(/url\(["']?/, '').replace(/["']?\)/, '');
+                lightboxImg.src = url;
+                lightbox.classList.add('active');
+            });
+        });
+
+        lightbox.addEventListener('click', function (e) {
+            if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
     </script>
             <div class="lightbox-overlay" id="lightbox">
         <span class="lightbox-close">&times;</span>
